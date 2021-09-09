@@ -1,9 +1,15 @@
 import styled from 'styled-components'
-const StyledFooter = styled.footer``
+import Wrapper from './Wrapper/Wrapper'
+const StyledFooter = styled.footer`
+    background-color: #1A1A1A;
+    color: white;
+`
 const Footer = () => {
 return (
 <StyledFooter>
-footer
+<Wrapper>
+    footer
+</Wrapper>
 </StyledFooter>
 )
 }
