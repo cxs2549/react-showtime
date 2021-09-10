@@ -21,7 +21,7 @@ const StyledHero = styled.div`
 	@media (min-width: 768px) {
 		background-image: url(${props => (props.desktop)});
 		background-position: top right;
-		height: 80vh;
+		/* height: 80vh; */
 		&::after {
 			content: '';
 			position: absolute;

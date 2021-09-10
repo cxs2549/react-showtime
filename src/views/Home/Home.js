@@ -15,19 +15,46 @@ import hero6 from '../../assets/hero/hero-6.jpg'
 import hero6mob from '../../assets/hero/hero-6-mobile.jpg'
 import 'react-slideshow-image/dist/styles.css'
 import { Fade } from 'react-slideshow-image'
-import {GrFormPrevious, GrFormNext} from 'react-icons/gr'
+import { GrFormPrevious, GrFormNext } from 'react-icons/gr'
+import ContentNav from './ContentNav/ContentNav'
 
 const StyledHome = styled.div`
 	/* height: 100vh; */
 	.react-slideshow-container {
 		margin-top: -80px;
 	}
+	.indicators {
+		display: flex;
+		gap: .75rem;
+		transform: translateY(-2rem);
+		z-index: 100;
+		position: relative;
+	
+	}
+	.indicator {
+		cursor: pointer;
+		/* padding: 10px; */
+		display: grid;
+		place-items: center;
+		width: 10px;
+		height: 10px;
+		text-align: center;
+		/* border: 1px #666 solid; */
+		background-color: #6d6d6d;
+		border-radius: 99999px;
+	}
+
+	.indicator.active {
+		background-color: #fff;
+	}
 	svg {
 		cursor: pointer;
+		@media (min-width: 768px) {
+			font-size: 3rem;
+		}
 	}
 	svg polyline {
 		stroke: white;
-		
 	}
 `
 
@@ -35,13 +62,20 @@ const properties = {
 	duration: 5000,
 	transitionDuration: 500,
 	infinite: true,
+	indicators: (i) => <div className="indicator text-white" />,
 	prevArrow: (
-		<div style={{ fontSize: '50px', marginRight: '-50px' }}>
+		<div
+			style={{ fontSize: '50px', marginRight: '-50px' }}
+			className="bg-gray-700  transform translate-x-4 translate-y-9 opacity-70 rounded"
+		>
 			<GrFormPrevious />
 		</div>
 	),
 	nextArrow: (
-		<div style={{ fontSize: '50px', marginLeft: '-50px' }}>
+		<div
+			className="bg-gray-700  transform -translate-x-4 translate-y-9 opacity-70 rounded"
+			style={{ fontSize: '50px', marginLeft: '-50px' }}
+		>
 			<GrFormNext />
 		</div>
 	)
@@ -96,7 +130,7 @@ const Home = () => {
 					<Hero key={i} desktop={mainhero} mobile={mobileHeroes[i]} info={info[i]} />
 				))}
 			</Fade>
-			<Wrapper>hi</Wrapper>
+				<ContentNav />
 		</StyledHome>
 	)
 }

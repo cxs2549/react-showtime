@@ -2,7 +2,8 @@ import styled from 'styled-components'
 const StyledInfo = styled.div`
 	h1 {
 		position: relative;
-		max-width: 370px;
+		line-height: 1.2;
+		/* max-width: 390px; */
 		@media (min-width: 768px) {
 			max-width: 460px;
 			&::before {
@@ -17,9 +18,13 @@ const StyledInfo = styled.div`
 		}
 	}
 	p {
+		font-size: 90%;
 		@media (min-width: 768px) {
 			min-width: 580px;
 			max-width: 580px;
+		}
+		@media (min-width: 1280px) {
+			font-size: 100%;
 		}
 	}
 	button {
@@ -29,8 +34,8 @@ const StyledInfo = styled.div`
 const Info = ({info}) => {
 	return (
 		<StyledInfo className="text-white md:transform z-10 md:-translate-x-1/2 w-full max-w-6xl mx-auto md:absolute left-1/2 top-0 h-full  md:mt-0">
-			<div className=" w-full items-center md:items-start md:w-8/12 lg:w-8/12 xl:w-7/12 px-4  xl:px-0   text-white py-8 flex flex-col md:mt-32 xl:-mt-4  xl:justify-center h-full md:ml-12 xl:ml-0">
-				<h1 className=" uppercase text-2xl font-bold md:text-5xl xl:text-5xl  mb-1 text-center md:text-left">
+			<div className=" w-full items-center md:items-start md:w-8/12 lg:w-8/12 xl:w-7/12 px-4  xl:px-0   text-white py-8 flex flex-col md:mt-32 xl:-mt-4  xl:justify-center h-full md:ml-16 xl:ml-0">
+				<h1 className="  uppercase text-2xl font-bold md:text-5xl xl:text-5xl  mb-1 text-center md:text-left">
 					{info[0]}
 				</h1>
 				<p className="font-medium md:hidden text-center md:text-left leading-6">
