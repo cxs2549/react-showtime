@@ -5,16 +5,40 @@ import Wrapper from './Wrapper/Wrapper'
 import Button from '../ui/Button/Button'
 import Browse from './Browse/Browse'
 import Search from './Search/Search'
+import { useState, useRef } from 'react'
+import Menu from './Browse/Menu/Menu'
+import useOnClickOutside from 'use-onclickoutside'
+import Overlay from './Browse/Menu/Overlay/Overlay'
 
-const StyledHeader = styled.header``
+const StyledHeader = styled.header`
+	transition: background-color 450ms;
+`
 const Header = () => {
+	const [isOpen, setIsOpen] = useState(false)
+	const handleOpen = () => {
+		setIsOpen(!isOpen)
+		document.getElementById('myHeader').classList.toggle('bg-black')
+		document.body.classList.toggle('open-modal')
+	}
+	const handleClose = () => {
+		setIsOpen(false)
+		document.getElementById('myHeader').classList.remove('bg-black')
+		document.body.classList.remove('open-modal')
+
+	}
+	const menuRef = useRef()
+	useOnClickOutside(menuRef, () => setIsOpen(false))
 	return (
 		<Headroom>
-			<StyledHeader className="bg-black text-white">
+			<StyledHeader id="myHeader" className="bg-transparent text-white">
 				<Wrapper>
-					<div className="flex items-center gap-8">
-						<img src={logo} className="w-40" alt="" />
-						<Browse />
+					<div className="flex items-center gap-1 md:gap-4 lg:gap-8">
+						<div ref={menuRef}>
+							<Browse open={isOpen} click={handleOpen} />
+							<Menu open={isOpen} close={handleClose} />
+							<Overlay open={isOpen} close={handleClose} />
+						</div>
+						<img src={logo} className="w-32 md:w-40 xl:-ml-8" alt="" />
                         <Search />
 					</div>
 					<Button title="sign in" />
