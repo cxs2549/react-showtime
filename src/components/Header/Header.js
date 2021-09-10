@@ -12,6 +12,8 @@ import Overlay from './Browse/Menu/Overlay/Overlay'
 
 const StyledHeader = styled.header`
 	transition: background-color 450ms;
+	/* background-color: transparent; */
+	/* display: none; */
 `
 const Header = () => {
 	const [isOpen, setIsOpen] = useState(false)

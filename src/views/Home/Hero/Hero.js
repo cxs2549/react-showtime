@@ -7,8 +7,8 @@ const StyledHero = styled.div`
 	background-image: url(${props => (props.mobile)});
 	background-repeat: no-repeat;
 	background-size: cover;
-	margin-top: -80px;
-	position: relative;
+	/* margin-top: -80px; */
+	/* position: relative; */
 	@media (min-width: 450px) {
 		height: 44vh;
 	}
