@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/react-showtime/static/css/main.c8650dff.chunk.css",
+    "main.js": "/react-showtime/static/js/main.89f960fe.chunk.js",
+    "main.js.map": "/react-showtime/static/js/main.89f960fe.chunk.js.map",
+    "runtime-main.js": "/react-showtime/static/js/runtime-main.26ad352a.js",
+    "runtime-main.js.map": "/react-showtime/static/js/runtime-main.26ad352a.js.map",
+    "static/css/2.9e3d1f2a.chunk.css": "/react-showtime/static/css/2.9e3d1f2a.chunk.css",
+    "static/js/2.3fe7a1b8.chunk.js": "/react-showtime/static/js/2.3fe7a1b8.chunk.js",
+    "static/js/2.3fe7a1b8.chunk.js.map": "/react-showtime/static/js/2.3fe7a1b8.chunk.js.map",
+    "index.html": "/react-showtime/index.html",
+    "static/css/2.9e3d1f2a.chunk.css.map": "/react-showtime/static/css/2.9e3d1f2a.chunk.css.map",
+    "static/css/main.c8650dff.chunk.css.map": "/react-showtime/static/css/main.c8650dff.chunk.css.map",
+    "static/js/2.3fe7a1b8.chunk.js.LICENSE.txt": "/react-showtime/static/js/2.3fe7a1b8.chunk.js.LICENSE.txt",
+    "static/media/hero-1-mobile.739cf519.jpg": "/react-showtime/static/media/hero-1-mobile.739cf519.jpg",
+    "static/media/hero-1.2689e915.jpg": "/react-showtime/static/media/hero-1.2689e915.jpg",
+    "static/media/hero-2-mobile.5cfec576.jpg": "/react-showtime/static/media/hero-2-mobile.5cfec576.jpg",
+    "static/media/hero-2.2a797b12.jpg": "/react-showtime/static/media/hero-2.2a797b12.jpg",
+    "static/media/hero-3-mobile.483137f8.jpg": "/react-showtime/static/media/hero-3-mobile.483137f8.jpg",
+    "static/media/hero-3.838df314.jpg": "/react-showtime/static/media/hero-3.838df314.jpg",
+    "static/media/hero-4-mobile.4918eec3.jpg": "/react-showtime/static/media/hero-4-mobile.4918eec3.jpg",
+    "static/media/hero-4.48c3377a.jpg": "/react-showtime/static/media/hero-4.48c3377a.jpg",
+    "static/media/hero-5-mobile.7c590614.jpg": "/react-showtime/static/media/hero-5-mobile.7c590614.jpg",
+    "static/media/hero-5.3d7de4f4.jpg": "/react-showtime/static/media/hero-5.3d7de4f4.jpg",
+    "static/media/hero-6-mobile.d612c9ca.jpg": "/react-showtime/static/media/hero-6-mobile.d612c9ca.jpg",
+    "static/media/hero-6.3d252f1f.jpg": "/react-showtime/static/media/hero-6.3d252f1f.jpg",
+    "static/media/logo.51076abf.png": "/react-showtime/static/media/logo.51076abf.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.26ad352a.js",
+    "static/css/2.9e3d1f2a.chunk.css",
+    "static/js/2.3fe7a1b8.chunk.js",
+    "static/css/main.c8650dff.chunk.css",
+    "static/js/main.89f960fe.chunk.js"
+  ]
+}
