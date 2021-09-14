@@ -7,7 +7,7 @@ const StyledOverlay = styled.div`
     width: 100vw;
     visibility: ${props => (props.open ? 'visible' : 'hidden')};
     background-color: rgba(0,0,0,.7);
-    /* transition: visibility 150ms; */
+    /* transition: visibility 450ms; */
 `
 const Overlay = ({open, close}) => {
 return (

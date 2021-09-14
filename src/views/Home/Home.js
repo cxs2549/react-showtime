@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import Hero from './Hero/Hero'
-import Wrapper from './Wrapper/Wrapper'
 import hero1 from '../../assets/hero/hero-1.jpg'
 import hero1mob from '../../assets/hero/hero-1-mobile.jpg'
 import hero2 from '../../assets/hero/hero-2.jpg'
@@ -27,7 +26,7 @@ const StyledHome = styled.div`
 		display: flex;
 		gap: .75rem;
 		transform: translateY(-2rem);
-		z-index: 100;
+		z-index: 10;
 		position: relative;
 	
 	}
@@ -66,14 +65,14 @@ const properties = {
 	prevArrow: (
 		<div
 			style={{ fontSize: '50px', marginRight: '-50px' }}
-			className="bg-gray-700  transform translate-x-4 translate-y-9 opacity-70 rounded"
+			className="bg-gray-800  transform translate-x-4 translate-y-9 opacity-70 rounded"
 		>
 			<GrFormPrevious />
 		</div>
 	),
 	nextArrow: (
 		<div
-			className="bg-gray-700  transform -translate-x-4 translate-y-9 opacity-70 rounded"
+			className="bg-gray-800  transform -translate-x-4 translate-y-9 opacity-70 rounded"
 			style={{ fontSize: '50px', marginLeft: '-50px' }}
 		>
 			<GrFormNext />
@@ -89,7 +88,7 @@ const Home = () => {
 			'Every series. Entire seasons.',
 			'Watch award-winning original series, all commercial-free.',
 			`Watch award-winning SHOWTIME original series, all commercial-free. Get new episodes when they first premiere or catch up on full seasons and complete series.`,
-			'start your free trials'
+			'start your free trial'
 		],
 		[
 			'the home of combat sports',

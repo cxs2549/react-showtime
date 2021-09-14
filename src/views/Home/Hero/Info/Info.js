@@ -6,6 +6,7 @@ const StyledInfo = styled.div`
 		/* max-width: 390px; */
 		@media (min-width: 768px) {
 			max-width: 460px;
+			line-height: 1;
 			&::before {
 				content: '';
 				position: absolute;
@@ -29,6 +30,10 @@ const StyledInfo = styled.div`
 	}
 	button {
 		background-color: var(--brandRed);
+		transition: .3s;
+		&:hover {
+			box-shadow: inset 0px 0px 0px 3px #f7f7f7;
+		}
 	}
 `
 const Info = ({info}) => {
@@ -44,7 +49,7 @@ const Info = ({info}) => {
 				<p className="  hidden  md:block text-lg py-2 leading-6 font-medium opacity-90">
 					{info[2]}
 				</p>
-				<button className="rounded  mt-4 font-semibold uppercase  py-2 px-5 block w-full md:max-w-xs text-sm">
+				<button className="rounded  mt-4 font-semibold uppercase  py-3 px-5 block w-full md:max-w-xs text-sm xl:text-base filter hover:brightness-150">
 					{info[3]}
 				</button>
 			</div>
